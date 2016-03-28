@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Annoying Hangman | We dare you to play!</title>
+		<script src="jquery-1.11.1.min.js"></script>
+		<script src="jquery.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" href="assets/lose.png">
+	</head>
+	<body>
+		<header>
+			<h1>Annoying Hangman!</h1>
+		</header>
+		<aside id="left">
+			<h3>Score</h3>
+			<div id="score">0</div>
+			<button id="resetGame">
+				Gah, let me reset everything!
+			</button>
+		</aside>
+		<section id="maincontent">
+			<div id="image">
+				<img src="assets/0.jpg" alt="image">
+			</div>
+			<div id="respondButton">
+				<button id="playAgain">
+					Try again!
+				</button>
+			</div>
+			<div id="keyword"></div>
+			<div id="keyboard">
+				<button value="q" id="q" class="keyboardButton">q</button>
+				<button value="w" id="w" class="keyboardButton">w</button>
+				<button value="e" id="e" class="keyboardButton">e</button>
+				<button value="r" id="r" class="keyboardButton">r</button>
+				<button value="t" id="t" class="keyboardButton">t</button>
+				<button value="y" id="y" class="keyboardButton">y</button>
+				<button value="u" id="u" class="keyboardButton">u</button>
+				<button value="i" id="i" class="keyboardButton">i</button>
+				<button value="o" id="o" class="keyboardButton">o</button>
+				<button value="p" id="p" class="keyboardButton">p</button>
+				<br>
+				<button value="a" id="a" class="keyboardButton">a</button>
+				<button value="s" id="s" class="keyboardButton">s</button>
+				<button value="d" id="d" class="keyboardButton">d</button>
+				<button value="f" id="f" class="keyboardButton">f</button>
+				<button value="g" id="g" class="keyboardButton">g</button>
+				<button value="h" id="h" class="keyboardButton">h</button>
+				<button value="j" id="j" class="keyboardButton">j</button>
+				<button value="k" id="k" class="keyboardButton">k</button>
+				<button value="l" id="l" class="keyboardButton">l</button>
+				<br>
+				<button value="z" id="z" class="keyboardButton">z</button>
+				<button value="x" id="x" class="keyboardButton">x</button>
+				<button value="c" id="c" class="keyboardButton">c</button>
+				<button value="v" id="v" class="keyboardButton">v</button>
+				<button value="b" id="b" class="keyboardButton">b</button>
+				<button value="n" id="n" class="keyboardButton">n</button>
+				<button value="m" id="m" class="keyboardButton">m</button>
+			</div>
+		</section>
+		<aside id="right">
+			<div id="history" class="sidebar">
+				<h3>History</h3>
+				<div class="table">
+					<div id="gameLog" class="colElement">
+						<div class="rowElement">Game</div>
+						<div class="strip">-</div>
+					</div>
+					<div id="scoreLog" class="colElement">
+						<div class="rowElement">Score</div>
+						<div class="strip">-</div>
+					</div>
+				</div>
+			</div>
+			<div id="total" class="sidebar">
+				<h3>Total</h3>
+				<div class="table">
+					<div class="colElement">
+						<div class="rowElement">Win</div>
+						<div id="winCount" class="rowElement">0</div>
+					</div>
+					<div class="colElement">
+						<div class="rowElement">Lose</div>
+						<div id="loseCount" class="rowElement">0</div>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar">
+				<h3>Tips</h3>
+				<div><p id="tips">You can play Annoying Hangman at your smartphone!</p></div>
+			</div>
+		</aside>
+		<footer>
+			<div id="copyright">&copy; 2014 Hasandi Patriawan</div>
+		</footer>
+	</body>
+</html>

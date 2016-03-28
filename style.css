@@ -1,0 +1,277 @@
+/* CSS Reset */
+*, *:after, *:before {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	text-align: center;
+	background-color: #ddd;
+}
+
+body {
+	/* Fluid width */
+	max-width: 1200px;
+	
+	background-color: #fff;
+	margin: 0 auto;
+	font-size: 16pt;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.3;
+	color: #333;
+}
+
+header {
+	font-family: 'Rock Salt', cursive;
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+}
+
+img {
+	/* Fluid Images */
+	max-width: 100%;
+}
+
+h1 {
+	padding: 30px 0;
+	text-align: center;	
+}
+
+#left {
+	float: left;
+	width: 20%;
+	padding: 15px;
+}
+
+#score {
+	font-size: 3em;
+}
+
+#right {
+	float: left;
+	width: 20%;
+	padding: 15px;
+}
+
+.sidebar {
+	float: left;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+#image {
+	padding: 0 15px;
+	margin: 10px auto;
+	float: left;
+	width: 100%;
+}
+
+#respondButton {
+	display: none;
+	width: 100%;
+	margin: 5px;
+	text-align: center;
+}
+
+#resetGame, #playAgain {
+	height: 5vh;
+	padding: 1vh;
+}
+
+#keyword {
+	padding: 15px;
+	max-width: 100%;
+	font-weight: 700;
+	font-size: 24pt;
+}
+
+.letter {
+	display: inline;
+	max-width: 100%;
+	margin: 0 5px;
+}
+
+#maincontent {
+	float: left;
+	height: 100%;
+	width: 60%;
+	padding: 15px;
+	border-left: 4px dotted #333;
+	border-right: 4px dotted #333;
+}
+
+#keyboard {
+	padding: 15px;
+	float: left;
+	width: 100%;
+}
+
+.table {
+	height: 100%;
+}
+
+.keyboardButton {
+	margin: 0.5vw;
+	width: 5vh;
+	height: 5vh;
+	font-size: 3vh;
+	text-transform: uppercase;
+}
+
+.colElement {
+	text-align: center;
+	float: left;
+	width: 50%;
+}
+
+footer #copyright {
+	clear: both;
+	text-align: center;
+	display: block;
+	height: 100%;
+	color: #fff;
+	background-color: #333;
+	padding: 50px 10px;
+}
+
+/* If the screen size is <= 720px */
+@media screen and (max-width: 720px) {
+	#maincontent {
+		width: 100%;
+		border-right: none;
+		border-left: none;
+		border-bottom: 4px dotted #333;
+	}
+
+	header h1 {
+		font-size: 5vh;
+	}
+
+	#left, #right {
+		width: 100%;
+		border-bottom: 4px dotted #333;
+	}
+	
+	#right {
+		border-bottom: none;
+	}
+
+	#maincontent {
+		width: 100%;
+	}
+
+	.letter {
+		font-size: 0.75em;
+	}
+
+	footer #copyright {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.keyboardButton {
+		width: 5vw;
+		height: 5vw;
+		font-size: 3vw;
+	}
+}
+
+@media only screen and (max-device-width: 959px) and (orientation: portrait) {
+	body {
+		font-size: 3vh;
+	}
+	
+	header h1 {
+		font-size: 5vh;
+	}
+	
+	#maincontent {
+		width: 100%;
+		border-right: none;
+		border-left: none;
+		border-bottom: 4px dotted #333;
+	}
+
+	#left, #right {
+		width: 100%;
+		border-bottom: 4px dotted #333;
+	}
+
+	#right {
+		border-bottom: none;
+	}
+
+	#maincontent {
+		width: 100%;
+	}
+
+	#resetGame, #playAgain {
+		height: 6vh;
+		font-size: 3vh;
+	}
+
+	.letter {
+		font-size: 5vw;
+	}
+
+	.sidebar {
+		font-size: 5vw;
+	}
+
+	footer #copyright {
+		padding: 10px;
+		font-size: 16pt;
+	}
+
+	.keyboardButton {
+		margin: 0.2vw;
+		width: 7vw;
+		height: 7vw;
+		font-size: 5vw;
+	}
+}
+
+@media only screen and (max-device-width: 1199px) and (orientation: landscape) {
+	body {
+		font-size: 3vw;
+	}
+	
+	header h1 {
+		font-size: 1vw;
+		height: 5%;
+	}
+	
+	#resetGame, #playAgain {
+		height: 5vw;
+		font-size: 2vw;
+	}
+
+	#image {
+		font-size: 2vw;
+	}
+
+	.letter {
+		font-size: 2vw;
+	}
+
+	.sidebar {
+		font-size: 2vw;
+	}
+
+	footer #copyright {
+		padding: 10px;
+		font-size: 8pt;
+	}
+
+	.keyboardButton {
+		margin: 0.1vw;
+		width: 3vw;
+		height: 3vw;
+		font-size: 2vw;
+	}
+}
